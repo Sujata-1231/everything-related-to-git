@@ -115,12 +115,22 @@ git config user.email "your-email@example.com"
 
 ### Head^
 
-- We can travel backwards in time with HEAD^
+- We can travel one commit backward in time using HEAD^
 
 ```js
-We can move one one commit back using head^
-git checkout c3;
+# Example: Moving back one commit from the current HEAD
+git checkout HEAD^
+Each time you use HEAD^, you move one commit backward from the current position.
 git checkout head^;
 Git checkout head^;
 Git checkout head^;
+
+You can chain them like this:
+git checkout HEAD^        # Moves one commit back
+git checkout HEAD^^       # Moves two commits back (equivalent to HEAD^1^1)
 ```
+
+### The "~" operator
+
+- Say you want to move a lot of levels up in the commit tree. It might be tedious to type ^ several times, so Git also has the tilde (~) operator.
+- The tilde operator (optionally) takes in a trailing number that specifies the number of parents you would like to ascend.
