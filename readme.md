@@ -112,3 +112,15 @@ git config user.email "your-email@example.com"
 - We can follow this to know more [step-by-step-guide-to-setting-up-git-config-global-properties](https://medium.com/geekculture/a-step-by-step-guide-to-setting-up-git-config-global-properties-db6dbce30fa8)
 
 - [Customizing-Git-Git-Configuration](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration)
+
+### Head^
+
+- We can travel backwards in time with HEAD^
+
+```js
+We can move one one commit back using head^
+git checkout c3;
+git checkout head^;
+Git checkout head^;
+Git checkout head^;
+```
